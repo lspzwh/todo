@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Set">
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/tou"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ninjia"
+        android:padding="1dp"
+        app:shapeAppearanceOverlay="@style/circleImageStyle"
+        android:scaleType="center"
+        android:clickable="true"/>
+    <TextView
+        android:id="@+id/cname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tou"
+        android:text="@string/name"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="30sp"
+        android:layout_toEndOf="@+id/tou"
+        android:layout_marginStart="30dp" />
+    <TextView
+        android:id="@+id/register_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="登录"
+        android:clickable="true"
+        android:layout_alignParentBottom="true"
+        android:textSize="25sp"
+        android:layout_marginBottom="20sp"
+        android:layout_marginLeft="20sp"/>
+
+
+
+</RelativeLayout>

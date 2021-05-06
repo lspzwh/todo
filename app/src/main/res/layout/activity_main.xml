@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="50dp"
+        android:clickable="true"
+        android:id="@+id/pic"
+        android:layout_height="50dp"
+        android:src="@drawable/ninjia"
+        android:padding="1dp"
+        app:shapeAppearanceOverlay="@style/circleImageStyle"
+        android:scaleType="center"
+        android:focusable="true" />
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frame"
+        android:layout_above="@+id/Navi"
+        android:layout_below="@+id/bar"/>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/Navi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="?android:attr/windowBackground"
+        app:itemTextColor="@drawable/bottom_navi"
+        app:menu="@menu/bottom_navi_item"
+        app:itemIconTint="@drawable/bottom_navi"
+        />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/plus"
+        app:backgroundTint="@android:color/white"
+        app:borderWidth="0dp"
+        app:elevation="9dp"
+        android:contentDescription="@string/plus" />
+
+</RelativeLayout>

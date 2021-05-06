@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".register">
+    <ImageView
+        android:layout_width="230sp"
+        android:layout_height="230sp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/xingqiu"
+        android:layout_marginTop="50sp"/>
+
+    <EditText
+        android:id="@+id/register_name"
+        android:layout_width="300sp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="60sp"
+        android:hint="输入账号"
+        android:drawableLeft="@drawable/name"
+        android:layout_marginTop="250sp"
+        android:singleLine="true"
+        android:maxLength="10"
+        android:background="@drawable/shape"
+        android:drawableStart="@drawable/name" />
+    <EditText
+        android:id="@+id/register_key"
+        android:layout_width="300sp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="60sp"
+        android:hint="输入密码"
+        android:drawableLeft="@drawable/key"
+        android:layout_below="@+id/register_name"
+        android:singleLine="true"
+        android:maxLength="20"
+        android:background="@drawable/shape"
+        android:drawableStart="@drawable/key" />
+    <EditText
+        android:id="@+id/confirm"
+        android:layout_width="300sp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="60sp"
+        android:hint="输入密码"
+        android:drawableLeft="@drawable/key"
+        android:layout_below="@+id/register_key"
+        android:singleLine="true"
+        android:inputType="textPassword"
+        android:maxLength="20"
+        android:background="@drawable/shape"
+        android:drawableStart="@drawable/key" />
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/register_go"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/pass"
+        android:padding="1dp"
+        android:layout_below="@+id/confirm"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30sp"
+        app:shapeAppearanceOverlay="@style/circleImageStyle"
+        android:scaleType="center"
+        app:strokeColor="#46A3FF"
+        app:strokeWidth="5sp" />
+</RelativeLayout>
